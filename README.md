@@ -1,7 +1,5 @@
 # nextjs-playground
 
-NOT YET IMPLEMENTED
-
 📚 Learning and exploring Next.js.
 
 > The React Framework for Production.
@@ -10,6 +8,8 @@ NOT YET IMPLEMENTED
 
 
 ## Description
+
+This is a runnable demonstration of Next.js focused on the Static Site Generation (SSG) use-case. 
 
 Next.js has won its race. I'd like to learn it. Specifically, I'm often needing a way to create a static HTML page from
 a set of small but always-changing data and I naturally find tools like Mustache templates (implemented in most languages),
@@ -63,17 +63,31 @@ Follow these instructions to build the site and view it in your browser:
    * ```shell
      npm run build
      ```
-   * The site was generated via SSG! See the `build/` directory (? get the right dir).
+   * The site was generated via SSG! See the `out/` directory.
+   * The build step used the [Static HTML Export](https://nextjs.org/docs/advanced-features/static-html-export) feature
+     of Next.js.
 1. Serve and open in your browser
    * The build phase of the software delivery process is over. Our site exists as static HTML, JavaScript and CSS files.
      We can perform a hand-off to a server technology of our choice to *serve* the site. We can serve the site using a
      popular content server like Nginx, or we can use a Python server which is conveniently available on all Macs, or of
      course we can serve it with a Node-based server. Let's serve it with Python using the following command.
    * ```shell
-      python3 -m http.server --directory build/
+      python3 -m http.server --directory out/
       ```
    * Open the browser and navigate to <http://localhost:8000>.
 
+That's the end of the demo. In most cases, you'll likely use the Next.js development server while you develop you site.
+See the [Next.js docs](https://nextjs.org/docs/getting-started) to continue your learning journey.
+
+## Notes
+
+Here are miscellaneous notes.
+
+* There is great content in the Next.js docs. They offer a cohesive tutorial over a lot of modern front-end engineering
+  concepts. By contrast, the docs are not meant as an intro to web development. Here is a snippet from the [*Foundations* docs](https://nextjs.org/learn/foundations/how-nextjs-works/rendering):
+  * > On the client, the HTML is used to show a fast non-interactive page, while React uses the JSON data and JavaScript
+      instructions to make components interactive (for example, attaching event handlers to a button). This process is
+      called **hydration**.
 
 ## Reference
 
