@@ -6,7 +6,6 @@ import * as process from 'node:process';
  * @return {boolean}
  */
 function deployToGhPages() {
-    console.log(`DEPLOY_TO_GITHUB_PAGES: ${process.env.DEPLOY_TO_GITHUB_PAGES}`)
     return 'DEPLOY_TO_GITHUB_PAGES' in process.env && process.env.DEPLOY_TO_GITHUB_PAGES.toLowerCase() === 'true'
 }
 

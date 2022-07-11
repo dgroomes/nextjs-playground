@@ -98,3 +98,7 @@ Here are miscellaneous notes.
 ## Reference
 
 * [Next.js](https://nextjs.org/)
+* [GitHub Pages docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#static-site-generators)
+  * A quirk of using GitHub Pages is that it applies a Jekyll build process to the static files and Jekyll will ignore
+    directories with a leading underscore. This means `_next` would be ignored, but fortunately there is an option to use
+    `.nojekyll` file to opt-out of Jekyll.
