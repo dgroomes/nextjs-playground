@@ -79,6 +79,12 @@ Follow these instructions to build the site and view it in your browser:
 That's the end of the demo. In most cases, you'll likely use the Next.js development server while you develop you site.
 See the [Next.js docs](https://nextjs.org/docs/getting-started) to continue your learning journey.
 
+To build the site for deployment to GitHub Pages, use a special environment variable. The build command looks like this:
+
+```shell
+npm run build-target-gh-pages
+```
+
 ## Notes
 
 Here are miscellaneous notes.
