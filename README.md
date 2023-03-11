@@ -34,6 +34,7 @@ of software, and it will definitely solve my SSG needs. Let's learn it.
 
 Note: I'm not exploring Next.js for Server Side Rendering (SSR). That is a separate topic.
 
+
 ## JSX: Coupled with React
 
 If it was possible, I would love to cut down that dependency graph and use only JSX and a runtime like Node to run the
@@ -55,18 +56,20 @@ Can we get a form of JSX that compiles to straight HTML? Or compiles to web comp
 
 Follow these instructions to build the site and view it in your browser:
 
-1. Install dependencies
+1. Pre-requisite: Node.js
+    * I used version 18.15.0
+2. Install dependencies
    * ```shell
      npm install
      ```
-1. Build the site
+3. Build the site
    * ```shell
      npm run build
      ```
    * The site was generated via SSG! See the `out/` directory.
    * The build step used the [Static HTML Export](https://nextjs.org/docs/advanced-features/static-html-export) feature
      of Next.js.
-1. Serve and open in your browser
+4. Serve and open in your browser
    * The build phase of the software delivery process is over. Our site exists as static HTML, JavaScript and CSS files.
      We can perform a hand-off to a server technology of our choice to *serve* the site. We can serve the site using a
      popular content server like Nginx, or we can use a Python server which is conveniently available on all Macs, or of
@@ -85,6 +88,7 @@ To build the site for deployment to GitHub Pages, use a special environment vari
 npm run build-target-gh-pages
 ```
 
+
 ## Notes
 
 Here are miscellaneous notes.
@@ -94,6 +98,17 @@ Here are miscellaneous notes.
   * > On the client, the HTML is used to show a fast non-interactive page, while React uses the JSON data and JavaScript
       instructions to make components interactive (for example, attaching event handlers to a button). This process is
       called **hydration**.
+
+
+# Wish List
+
+General clean ups, TODOs and things I wish to implement for this project:
+
+* [ ] IN PROGRESS Upgrade to Next.js 13.
+  * Very very cool that there is an [upgrade guide](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13).
+  * Should I use the new `app/` directory?
+  * DONE Upgrade Node.
+
 
 ## Reference
 
