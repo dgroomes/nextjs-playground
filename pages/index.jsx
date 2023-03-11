@@ -1,10 +1,14 @@
-import { useState } from 'react';
-function Header({ title }) {
-    return <h1>{title ? title : 'Default title'}</h1>;
+import {useState} from 'react';
+
+function Header({title}) {
+    return <h1>{title}</h1>;
 }
 
 /**
  * This example is from the Next.js docs.
+ *
+ * The name "HomePage" is arbitrary. While the component name is not important, it is important that this component is
+ * a default export.
  */
 export default function HomePage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
@@ -17,7 +21,8 @@ export default function HomePage() {
 
     return (
         <div>
-            <Header title="Develop. Preview. Ship. 🚀" />
+            <Header title="nextjs-playground"/>
+            This is a "hello world" Next.js example project. Click the like button to increment the number of likes.
             <ul>
                 {names.map((name) => (
                     <li key={name}>{name}</li>

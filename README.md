@@ -104,9 +104,10 @@ Here are miscellaneous notes.
 
 General clean ups, TODOs and things I wish to implement for this project:
 
-* [ ] IN PROGRESS Upgrade to Next.js 13.
+* [x] DONE Upgrade to Next.js 13.
   * Very very cool that there is an [upgrade guide](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13).
-  * Should I use the new `app/` directory?
+  * SKIP (No. The 'apps' directory is a beta feature. It's not my intention to venture into non-final Next.js features)
+    Should I use the new `app/` directory?
   * DONE Upgrade Node.
 
 
