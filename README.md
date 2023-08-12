@@ -7,7 +7,7 @@
 > -- <cite>https://nextjs.org</cite>
 
 
-## Description
+## Overview
 
 This is a runnable demonstration of Next.js focused on the Static Site Generation (SSG) use-case. 
 
@@ -57,7 +57,7 @@ Can we get a form of JSX that compiles to straight HTML? Or compiles to web comp
 Follow these instructions to build the site and view it in your browser:
 
 1. Pre-requisite: Node.js
-    * I used version 18.15.0
+    * I used version 18.17.1
 2. Install dependencies
    * ```shell
      npm install
@@ -102,7 +102,7 @@ Here are miscellaneous notes.
 
 # Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE Upgrade to Next.js 13.
   * Very very cool that there is an [upgrade guide](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13).
